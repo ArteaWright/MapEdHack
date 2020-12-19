@@ -36,4 +36,4 @@ To stop the server from running and close the main page, use "control/command + 
 
 #### License 
 
-This application is licensed under ISC License - see the LICENSE.md file for details.
+This application is licensed under ISC License - see the LICENSE.md file for details..
