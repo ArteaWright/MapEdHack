@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>MapEd | "Resource for Alternative Learning" </title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- All HTML GOES HERE -->
+<header>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>MapEd</h1>
+        <p>Alternative Based Learning</p>
+      </div>
+    </div>
+  </header>
+  <section>
+    <h2>What We Are About</h2>
+    <img src="/" alt="" />
+    <aside>
+      <div class="tab">
+        <button id="tablinkpro">
+          Profile
+        </button>
+        <button id="tablinkimp">
+          Impact
+        </button>
+        <button id="tablinkcon">
+          Contact 
+        </button>
+      </div>
+      <div id="profile" class="tabcontent">
+        <p>
+          profile text
+        </p>
+      </div>
+
+      <div id="impact" class="tabcontent">
+        <p>
+          Impact text
+        </p>
+      </div>
+
+      <div id="contact" class="tabcontent">
+        <p>
+          Contact text
+        </p>
+      </div>
+    </aside>
+  </section>
+  <section>
+    <h2>Choose Your City</h2>
+    <button id="Charlotte">Charlotte</button>
+    <button id="Concord">Concord</button>
+    <button id="Greensboro">Greensboro</button>
+    <button id="Winston-Salem">Winston-Salem</button>
+
+<div id="map"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+      dolorum rem impedit aliquid magnam dolorem vitae sint sapiente quo
+      velit, expedita labore nam suscipit fugit quisquam, atque ab quibusdam
+      aliquam!
+    </p>
+  </section>
+  <footer>
+    <h3>MapEd</h3>
+    <h2>CSS Newsletter</h2>
+
+    <form id="contactform" action="/" method="POST">
+        <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>
+                Lorem ipsum text about why you should subscribe to our newsletter
+                blabla. Lorem ipsum text about why you should subscribe to our
+                newsletter blabla.
+            </p>
+        </div>
+        <label for="name"></label>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <label for="message"> Weekly Newsletter</label>
+        <input type="checkbox" checked="checked" name="message">
+        <button type="submit" value="Subscribe">Subscribe</button>
+</form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+      nobis quam quod ut nostrum enim! Nulla, beatae dignissimos. Suscipit
+      quidem delectus magni quaerat natus voluptatum tenetur recusandae facere
+      ratione modi.
+    </p>
+  </footer>
+
+
+
+
+<!-- STOP HERE -->
+<!-- Section for map and Javascript code -->
+<!-- All  JS Code for the map * PLEASE BE CAUTIOUS!!!!!!! *  -->
+<script>
+    // All code for map including mapping points/markers
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ0ZWF3cmlnaHQiLCJhIjoiY2tpcnAxa2VsMDQ2bjJ6bXBsaThvdjZvOSJ9.mLHXES8nN_N2wS3wdK4tQw';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-80.843124, 35.227085],
+zoom: 10
+});
+ 
+map.on('load', function () {
+map.loadImage(
+'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+// Add an image to use as a custom marker
+function (error, image) {
+if (error) throw error;
+map.addImage('custom-marker', image);
+ 
+// Add all the location of the points with their descriptions 
+map.addSource('places', {
+'type': 'geojson',
+'data': {
+'type': 'FeatureCollection',
+'features': [
+{
+    // Road to Hire
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Road to Hire</strong><p>1101 Red Ventures Dr, Fort Mill, SC 29707</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.84604433137838,
+35.006360489385095]
+}
+},
+{
+    // Charlotte Works
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Charlotte Works</strong><p>11301 Carmel Commons Blvd Suite 301, Charlotte, NC 28226  </p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.84465104486775,
+35.084469949333936]
+}
+},
+{
+     // Aviation Institute of Maintenance
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Aviation Institute of Maintenance</strong><p> 7421 E Independence Blvd, Charlotte, NC 28227 </p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.73646013137414,
+35.16188764531043]
+}
+},
+{
+      // Beatties Ford Rd Vocational Center
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Beatties Ford Rd Vocational Center</strong><p> 1406 Beatties Ford Rd, Charlotte, NC 28216</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.85541163137157,
+35.25651879866277]
+}
+},
+{
+    // Carolina School of Broadcasting
+'type': 'Feature',
+'properties': {
+'description':
+"<strong>Carolina School of Broadcasting</strong><p>3435 Performance Rd, Charlotte, NC 28214</p>"
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.98395227369924,
+35.256010438779754]
+}
+},
+{
+     // MyComputerCareer
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>MyComputerCareer</strong><p> 3701 Arco Corporate Dr #500, Charlotte, NC 28273</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.94832663137447,
+35.15078234399977]
+}
+},
+{
+     // Urban League of Central Carolinas
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Urban League of Central Carolinas</strong><p>740 W 5th St, Charlotte, NC 28202</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.84862721423002,
+35.23641103817398]
+}
+},
+{
+     // NC Works Career Center
+'type': 'Feature',
+'properties': {
+'description':
+"<strong>NC Works Career Center</strong><p>7140 Forest Point Blvd Suite A, Charlotte, NC 28217 </p>"
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.90025991602992,
+35.1429078635253]
+}
+},
+{
+    // Global Vocation Training Center
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Global Vocation Training Center</strong><p>4921 Albemarle Rd #203, Charlotte, NC 28212</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.76447963137309, 35.201561617997484]
+}
+}
+]
+}
+});
+ 
+// Add a layer showing the markers.
+map.addLayer({
+'id': 'places',
+'type': 'symbol',
+'source': 'places',
+'layout': {
+'icon-image': 'custom-marker',
+'icon-allow-overlap': true
+}
+});
+}
+);
+ 
+// Create a popup
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'places', function (e) {
+// Change the cursor style to pointer.
+map.getCanvas().style.cursor = 'pointer';
+ 
+// location and descirption variables 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// makes the points visible even if zoomed out 
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Popup is set to its coordinates based on the feature found.
+popup.setLngLat(coordinates).setHTML(description).addTo(map);
+});
+ 
+// mouse out event to get rid of pointer style cursor
+map.on('mouseleave', 'places', function () {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+});
+
+// functions to manipulate tabs in html code 
+document.getElementById('tablinkimp').addEventListener('click', function(){
+    document.getElementById("profile").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("impact").style.display = "block";
+})
+
+document.getElementById('tablinkcon').addEventListener('click', function(){
+    document.getElementById("impact").style.display = "none";
+    document.getElementById("profile").style.display = "none";
+    document.getElementById("contact").style.display = "block";
+})
+
+document.getElementById('tablinkpro').addEventListener('click', function(){
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("impact").style.display = "none";
+    document.getElementById("profile").style.display = "block";
+})
+
+// fucntion to manipulate map using buttons 
+var isAtStart = true;
+
+document.getElementById('Concord').addEventListener('click', function () {
+    var start = [-80.843124, 35.227085];
+    var end = [-80.579514, 35.408752];
+    var target = isAtStart ? end : start;
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+        center: target,
+        zoom: 9,
+        bearing: 0,
+        speed: 0.7,
+        curve: 1, 
+        easing: function (t) {
+        return t;
+},
+essential: true
+});
+});
+
+document.getElementById('Greensboro').addEventListener('click', function () {
+    var start = [-80.579514, 35.408752];
+    var end = [-79.766235, 36.044659];
+    var target = isAtStart ? end : start;
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+        center: target,
+        zoom: 9,
+        bearing: 0,
+        speed: 0.5,
+        curve: 1, 
+        easing: function (t) {
+        return t;
+},
+essential: true
+});
+});
+
+document.getElementById('Winston-Salem').addEventListener('click', function () {
+    var start = [-79.766235, 36.044659];
+    var end = [-80.244217, 36.099861];
+    var target = isAtStart ? end : start;
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+        center: target,
+        zoom: 9,
+        bearing: 0,
+        speed: 0.5,
+        curve: 1, 
+        easing: function (t) {
+        return t;
+},
+essential: true
+});
+});
+
+document.getElementById('Charlotte').addEventListener('click', function () {
+    var start = [-80.244217, 36.099861];
+    var end = [-80.843124, 35.227085];
+    var target = isAtStart ? end : start;
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+        center: target,
+        zoom: 9,
+        bearing: 0,
+        speed: 0.7,
+        curve: 1, 
+        easing: function (t) {
+        return t;
+},
+essential: true
+});
+});
+
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Stylesheet is linked. Here's a test: */
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+h1 {
+    color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* All Styling for the map */
+#map { 
+    width: 700px; height: 500px;
+}
+.mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#impact {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
