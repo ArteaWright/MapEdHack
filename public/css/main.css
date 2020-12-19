@@ -1,4 +1,7 @@
 /* Stylesheet is linked. Here's a test: */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 html {
     height: 100%;
 }
@@ -6,54 +9,397 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #ffecce;
 }
-h1 {
-    color:green;
+footer{ 
+    background-color: #de795b;
+}
+
+.hero{
+    width: 100%;
+    box-shadow: 3px 2px 7px 2px grey;
+}
+
+.logo {
+    background-color: transparent;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    left: 40px;
+    margin-top: 20px;
+}
+
+/* Company Name & Subtitle */
+
+.title{
+    color: #ffecce;
+    margin-top: -270px;
+    margin-left: 40px;
+    font-size: 130px;
+}
+
+.t2{
+    color: #de795b;
+    margin-top: -265px;
+    margin-left: 305px;
+    font-size: 130px;
+}
+
+
+.subt{
+    color: #de795b;
+    margin-top: -100px;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+
+/* What We're Abt */
+
+
+.wwa{
+    font-size: 50px;
+    text-align: center;
+    color: #3c4059;
+}
+
+
+.wwa1{
+    margin-top: 130px;
 }
 
 
 
+.comdes{
+    color: #3c4059;
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20PX;
+    margin-bottom: 70px;
+}
+
+.dude{
+    height: 500px;
+    width: 380px;
+    margin-left: 40px;
+    box-shadow: 1px 1px 9px 1px grey;
+    margin-bottom: 60px;
+
+}
+
+
+/* About Us Tabs */
+
+
+  .tab {
+    position: absolute;
+    right: 50px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    opacity: 85%;
+    margin-top: -370px;
+    box-shadow: 1px 1px 9px 1px grey;
+
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+.tab button:hover {
+    background-color: #ddd;
+    opacity: 50%;
+}
+  
+.tab button.active {
+    background-color:#de795b;
+}
+  
+.tabcontent {
+    position: absolute;
+    right: 50px;
+    display: none;
+    text-align: right;
+    padding: 6px 12px;
+    border-top: none;
+    margin-top: -310px;
+    margin-right: 40px;
+    background-color: transparent;
+}
+
+#profile {
+        position: absolute;
+        right: 50px;
+        text-align: right;
+        padding: 6px 12px;
+        border-top: none;
+        margin-top: -310px;
+        margin-right: 40px;
+        background-color: transparent;
+}
+
+.info{
+      color: #3c4059;
+    font-size: 15px;  
+    width: 60%;
+    margin-left:530px;
+}
+
+
+/* Cities */
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    color: #de795b;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+ opacity: 50%;
+}
 
 
 
+  /* City Styling */
+
+
+.midcit-item{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: 130px;
+}
+  
+.midcit-item a{
+    text-decoration:none;
+    font-size:20px;
+}
+
+
+/* Map API */
+
+.map{
+display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  /* box-shadow: 1px 1px 9px 1px grey; */
+
+
+}
+
+/* Below API Text */
+
+
+.btm{
+    text-align: center;
+    color: #3c4059;
+margin-top: 40px;
+margin-bottom: 90px;
+font-size: 12px;
+width: 70%;
+    text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
 
 
 
+/* 
+
+    .ft{
+        color: #ffecce;
+        margin-top: -270px;
+        margin-left: 40px;
+        font-size: 50px;
+    }
+  
+    .ft2{
+      color: #3c4059;
+      margin-top: -265px;
+      margin-left: 305px;
+      font-size: 50px;
+    } */
 
 
 
+/* Footer */
 
 
 
+.box {
+        background-color: #de795b;
+        height: 150px;
+        display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+/* justify-content: space-around;   */
+    font-size: 10px;
+
+
+    }
+
+.b1{
+    font-size: 7px;
+
+}
+
+
+    
+
+.b3{
+    text-align: right;  
+    font-size: 7px;
+}
+
+.white{
+margin-top: 40px;
+margin-right: 30px;
+color: #3c4059;
+}
+
+.join{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #3c4059;
+}
+
+.joinsub{
+    font-size: 7px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: #3c4059;
+}
+
+fieldset{
+text-align: center;
+border: none;
+margin-top: -8px;
+}
+
+input[type=text] {
+    text-align: center;
+    background-color: #e8e8e8;
+    width: 50%;
+    height: 1px;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    color: #301e20;
+    border-color:white;
+     border-radius: 4px;  
+     font-size:3px;
+     border: none;
+     color: #3c4059;
+     margin-right: 10px;
+
+  }
 
 
 
+input[type=submit] {
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #ffecce;
+    color: #de795b;
+    padding: 2px 88px;
+    border: none;
+}
+
+
+input[type=submit]:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 
 
+.lower{
+      display: flex;
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+/* justify-content: space-between;   */
+}
+
+
+.low{
+    background-color: black;
+    justify-content: space-between;
+}
+
+
+.compw{
+text-align: center;
+margin-right: 70px;
+}
 
 
 
+.bw{
+    color: #ffecce;
+        font-size: 45px;
+}
+
+.bw2{
+    color: #3c4059;
+    margin-top: -90px;
+    margin-left: 145px;
+      font-size: 45px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* Social Media */
+    
+    
+    /* .icons a{
+    color:#3c4059;
+    margin-top: 6px;
+    margin-right: 60px;
+    text-decoration: none;
+    } */
+    
+.icons{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size:20px;
+    margin-top: -160px;
+}
+    
+    
+.icons a{
+    text-decoration:none;
+    color:#3c4059;
+    font-size:18px;
+    margin-right: 30px;
+}
+    
+    
 /* All Styling for the map */
 #map { 
     width: 700px; height: 500px;
