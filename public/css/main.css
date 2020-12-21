@@ -81,9 +81,13 @@ footer{
     margin-bottom: 70px;
 }
 
+.img{
+    width: 50%;
+}
+
 .dude{
-    height: 500px;
-    width: 380px;
+    height: 520px;
+    width: 60%;
     margin-left: 40px;
     box-shadow: 1px 1px 9px 1px grey;
     margin-bottom: 60px;
@@ -92,22 +96,27 @@ footer{
 
 
 /* About Us Tabs */
+.tabwords {
+    width: 100%;
+    margin-top: 9%;
+}
 
-
-  .tab {
-      position: absolute;
-text-align: center;
+.tab {
+    position: absolute;
+    top: 175%;
+    right: 4%;
+    width: 50%;
+    float: right;
+    text-align: center;
     overflow: hidden;
     background-color: #f1f1f1;
     opacity: 85%;
-    margin-top: -370px;
     box-shadow: 1px 1px 9px 1px grey;
-
 }
   
 .tab button {
     background-color: inherit;
-border: none;
+    border: none;
     outline: none;
     cursor: pointer;
     padding: 6px;
@@ -143,20 +152,35 @@ border: none;
 
 
 #profile {
-        position: absolute;
-        right: 50px;
-        text-align: right;
-        padding: 6px 12px;
-        border-top: none;
-        margin-top: -310px;
-        margin-right: 40px;
-        background-color: transparent;
+    position: absolute;
+    top: 186%;
+    left: 46%;
+    width: 49%;
+    text-align: right;
+    padding: 6px 12px;
+    border-top: none;
+    background-color: transparent;
+}
+
+#impact {
+    position: absolute;
+    top: 186%;
+    left: 46%;
+    width: 49%;
+    display: none;
+}
+
+#contact {
+    position: absolute;
+    top: 186%;
+    left: 46%;
+    width: 49%;
+    display: none;
 }
 
 .info{
       color: #3c4059;
     font-size: 15px;  
-    width: 60%;
     text-align: center;
 }
 
@@ -364,18 +388,18 @@ margin-top: 50px;
     
     
 /* All Styling for the map */
+.themap{
+    width: 100%;
+    margin-bottom: 2%;
+}
 #map { 
-    width: 700px; height: 500px;
+    margin: auto;
+    width: 90%;
+    height: 500px;
 }
 .mapboxgl-popup {
 max-width: 400px;
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-#impact {
-    display: none;
-}
 
-#contact {
-    display: none;
-}

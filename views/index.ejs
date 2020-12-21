@@ -36,11 +36,13 @@
         and uniqueness of so many peoples living situation, regardless of your
         wage class, age, residency, and/or career path, with MapEd we can find
         the right Alternative Based Learning program for you! </p>
+ </section>
 
 
-<img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" class="dude"> 
-
-    <aside>
+    <section class="tabwords">
+      <div class="img">
+      <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" class="dude"> 
+      </div>
       <div class="tab">
         <button id="tablinkpro"  class="tablinks">
           Impact
@@ -52,7 +54,7 @@
           Contact 
         </button>
       </div>
-
+      <div class="words">
       <div id="profile">
         <p class="info"> How we plan to make an impact will be through extending various
             learning opprotunities through our platform. We advocate for those
@@ -85,12 +87,10 @@
              <br>
              MapEd@AOL.com
             </p>
+          </div>
       </div>
-    </aside>
-
-
-  </section>
-  <section>
+    </section>
+  <section class="maparea">
        
     <h3 class="wwa">CHOOSE YOUR CITY</h3>
 
@@ -102,8 +102,9 @@
 
     </div>
 
-
+    <div class="themap">
     <div id="map"></div>
+    </div>
     
     
   </section>
@@ -178,7 +179,7 @@ var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11',
 center: [-80.843124, 35.227085],
-zoom: 10
+zoom: 8
 });
  
 map.on('load', function () {
