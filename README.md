@@ -21,7 +21,10 @@ To stop the server from running and close the main page, use "control/command + 
 * Node.js (for the server) 
 * Javascript (for the appliation) 
 * Express (for endpoints) 
-* MapBox API (used for the inertactive map) 
+
+## API Used
+
+* MapBox API (used for the inertactive map)
 
 ### Author 
 
