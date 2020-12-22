@@ -41,37 +41,47 @@
 
     <section class="tabwords">
       <div class="img">
-      <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" class="dude"> 
+      <img class="dude" alt="" src="https://media2.giphy.com/media/J0D0SAmNsK3G7OOoqK/giphy.gif">
       </div>
       <div class="tab">
         <button id="tablinkpro"  class="tablinks">
-          Impact
+          Our Impact
         </button>
         <button id="tablinkimp" class="tablinks">
-          How It Works 
+          How It Works?
         </button>
         <button id="tablinkcon" class="tablinks">
-          Contact 
+          Contact Us
         </button>
       </div>
       <div class="words">
       <div id="profile">
-        <p class="info"> How we plan to make an impact will be through extending various
-            learning opprotunities through our platform. We advocate for those
+        <p class="info"> By extending various
+            learning opprotunities through our platform, we advocate for those
             who would decide to take control of their own education. Our
             responsibility is to support those students and provide assistance.
             Studies show that the average college student in North Carolina is
-            around $25,000 in student loan debt and our mission is to reduce
-            those numbers and provide access to more affordable education. </p>
+            around $30,000 in student loan debt and our mission is to reduce
+            those numbers and provide access and information about more affordable education.
+            <br>
+            <br>
+            <img class="stats" alt="Total Debt in the U.S." src="https://www.usnews.com/media/education/best-colleges/paying-for-college/see-10-years-of-average-student-loan-debt">
+        </p>
       </div>
 
       <div id="impact" class="tabcontent">
-        <p class="info">The way MapEd works, you would simply select one of the prompted
-            regions in which you reside, then our map below map will highlight
-            many of the different Alternative Based Learning programs in your
-            area. You can zoom in and out, select other regions, and seamlessly
+        <p class="info">MapEd allows you to simply select one of the prompted
+            regions in which you reside,(Charlotte, Concord, Greensboro or Winston-Salem) then our map below map will highlight many of the different organization and programs in your
+            area that serve as an alternative to college.
+            <br>
+            <br>
+            You can zoom in and out, select other regions, and seamlessly
             explore the area where you would potentially apply find your next
-            opprotunity. </p> 
+            opprotunity.
+            <br>
+            <br>
+            <img class="mapgif" alt="mapgif" src="https://i.pinimg.com/originals/d7/ae/01/d7ae0170d3d5ffcbaa7f02fdda387a3b.gif">
+           </p> 
       </div>
 
       <div id="contact" class="tabcontent">
@@ -82,10 +92,12 @@
             explore the area where you would potentially apply find your next
             opprotunity. Contact MapEd 24/7 via phone or email at: </p>
             <br>
+             <p class="diffc">Phone: 1-(800)-DEBTWHO
             <br>
-             <p class="diffc">716.123.4567 
+             Email: cancelstudentdebt@mapEd.com
              <br>
-             MapEd@AOL.com
+             <br>
+             <img class="emailus" src="https://thumbs.gfycat.com/NegligiblePaltryCorydorascatfish-small.gif">
             </p>
           </div>
       </div>
@@ -311,7 +323,111 @@ map.addSource('places', {
 'type': 'Point',
 'coordinates': [-80.76447963137309, 35.201561617997484]
 }
+},
+{
+     // The Dental Assistant Academy of Charlotte
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>The Dental Assistant Academy of Charlotte</strong><p>3707 Latrobe Dr #420, Charlotte, NC 28211</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.79604861632036,
+35.19608565931605]
 }
+},
+{
+     // Dale Carnegie Training
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Dale Carnegie Training</strong><p>837 Tanglewood Dr NE, Concord, NC 28025</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.59161154514887,
+35.448295483716805]
+}
+},
+{
+     // ATP Flight School
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>ATP Flight School</strong><p>9101 Aviation Blvd NW, Concord, NC 28027</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.71328391816957,
+35.38677895696656]
+}
+},
+{
+     // New Horizons Computer Learning Centers
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>New Horizons Computer Learning Centers</strong><p>7017A, Albert Pick Rd, Greensboro, NC 27409</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-79.94516835861944,
+36.074413427362394]
+}
+},
+{
+     // Flight Attendant Training Program at Triad Aviation Academy
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Flight Attendant Training Program at Triad Aviation Academy</strong><p>1030 PTI Dr, Greensboro, NC 27409</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-79.94362461629152,
+36.09940937058622]
+}
+},
+{
+     // Piedmont Flight Training
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Piedmont Flight Training</strong><p>3789 N Liberty St, Winston-Salem, NC 27105</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.22989724512678,
+36.137801301833875]
+}
+},
+{
+     // NCWorks Career Center
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>NCWorks Career Center - Forsyth County</strong><p>2701 University Pkwy, Winston-Salem, NC 27105</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.25752376047302,
+36.12517953249578]
+}
+},
+{
+     // NCWorks Career Center
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>NCWorks Career Center - Forsyth County</strong><p>2701 University Pkwy, Winston-Salem, NC 27105</p>'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-80.25752376047302,
+36.12517953249578]
+}
+},
 ]
 }
 });

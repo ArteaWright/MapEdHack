@@ -65,6 +65,7 @@ footer{
 
 
 .wwa1{
+    color: #de795b;
     margin-top: 130px;
 }
 
@@ -86,12 +87,11 @@ footer{
 }
 
 .dude{
-    height: 520px;
-    width: 60%;
+    height: 490px;
+    width: 79%;
     margin-left: 40px;
     box-shadow: 1px 1px 9px 1px grey;
     margin-bottom: 60px;
-
 }
 
 
@@ -104,8 +104,8 @@ footer{
 .tab {
     position: absolute;
     top: 175%;
-    right: 4%;
-    width: 50%;
+    right: 14%;
+    width: 30%;
     float: right;
     text-align: center;
     overflow: hidden;
@@ -150,12 +150,26 @@ footer{
     text-align: center;
 }
 
+.stats {
+    width: 400px;
+    height:350px;
+}
+
+.mapgif{
+    width: 375px;
+    height: 275px;
+}
+
+.emailus {
+    width: 275px;
+    height: 175px;
+}
 
 #profile {
     position: absolute;
-    top: 186%;
-    left: 46%;
-    width: 49%;
+    top: 180%;
+    left: 47%;
+    width: 46%;
     text-align: right;
     padding: 6px 12px;
     border-top: none;
@@ -164,17 +178,17 @@ footer{
 
 #impact {
     position: absolute;
-    top: 186%;
-    left: 46%;
-    width: 49%;
+    top: 180%;
+    left: 47%;
+    width: 46%;
     display: none;
 }
 
 #contact {
     position: absolute;
-    top: 186%;
-    left: 46%;
-    width: 49%;
+    top: 180%;
+    left: 47%;
+    width: 46%;
     display: none;
 }
 
